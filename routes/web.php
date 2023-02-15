@@ -15,7 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    // return view('welcome');
+    // redirect('importExportView');
+    return redirect('importExportView');
 });
 
 Route::get('importExportView',[FileImportController::class,'importExportView']);
